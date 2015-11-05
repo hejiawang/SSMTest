@@ -6,4 +6,18 @@
 		select id, name from test
 	</select>
 
+	<select id="getTestById" resultType="com.wang.test.model.Test"
+		parameterType="java.lang.Integer">
+		select id, name from test where id=#{id}
+	</select>
+
+	<insert id="addTest" parameterType="com.wang.test.model.Test">
+		insert test
+		value(#{id},#{name})
+	</insert>
+
+	<update id="updateTestById" parameterType="java.lang.String">
+		update test set name=#{name} where id=4;
+	</update>
+
 </mapper>
