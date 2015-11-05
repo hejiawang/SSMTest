@@ -43,8 +43,13 @@ public class TestJunit {
 	}
 	
 	@org.junit.Test
-	public void updateTestById(int id, String name){
-		testDao.updateTestById( "testUpdate");
+	public void updateTestById(){
+		testDao.updateTestById( 4, "test44");
+	}
+	
+	@org.junit.Test
+	public void delTestById(){
+		testDao.delTestById(3);
 	}
 	
 	public TestDao getTestDao() {

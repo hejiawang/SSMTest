@@ -14,5 +14,7 @@ public interface TestDao {
 
 	public void addTest(Test test);
 
-	public void updateTestById(String name);
+	public void updateTestById(@Param("id") int id, @Param("name") String name);
+	
+	public void delTestById(int id);
 }

@@ -16,8 +16,12 @@
 		value(#{id},#{name})
 	</insert>
 
-	<update id="updateTestById" parameterType="java.lang.String">
-		update test set name=#{name} where id=4;
+	<update id="updateTestById" >
+		update test set name=#{name} where id=#{id};
 	</update>
+	
+	<delete id="delTestById" parameterType="java.lang.Integer">
+		delete from test where id=#{id}
+	</delete>
 
 </mapper>
