@@ -27,21 +27,10 @@
 		<constructor-arg ref="sqlSessionFactory" />
 	</bean>
 
-<!-- 	<bean id="testDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
-		<property name="mapperInterface" value="com.wang.cxf.test.dao.TestDao"></property>
-		<property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
-	</bean> -->
-	
 	<!-- DAO接口所在包名，Spring会自动查找其下的类 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.wang.cxf.test.dao" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
 	</bean>
-
-	<!-- <bean id="testController" class="com.wang.cxf.test.controller.TestController">
-		<property name="testDao">
-			<ref bean="testDao" />
-		</property>
-	</bean> -->
 
 </beans>

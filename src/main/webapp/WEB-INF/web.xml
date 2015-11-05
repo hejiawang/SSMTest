@@ -2,8 +2,8 @@
 
 <web-app>
 
-	<display-name>CXFTest</display-name>
-<welcome-file-list>
+	<display-name>SSMTest</display-name>
+	<welcome-file-list>
 		<welcome-file>view/test.jsp</welcome-file>
 	</welcome-file-list>
 	<!-- 配置字符集 -->
@@ -35,7 +35,7 @@
 			org.springframework.web.util.Log4jConfigListener
 		</listener-class>
 	</listener>
-	
+
 	<!-- 加载所有的配置文件 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
