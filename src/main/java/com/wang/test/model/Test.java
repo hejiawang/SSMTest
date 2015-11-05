@@ -1,4 +1,4 @@
-package com.wang.cxf.test.model;
+package com.wang.test.model;
 
 public class Test {
 

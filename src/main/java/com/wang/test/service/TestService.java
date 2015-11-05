@@ -1,12 +1,12 @@
-package com.wang.cxf.test.service;
+package com.wang.test.service;
 
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.wang.cxf.test.dao.TestDao;
-import com.wang.cxf.test.model.Test;
+import com.wang.test.dao.TestDao;
+import com.wang.test.model.Test;
 
 @Component("testService")
 public class TestService {

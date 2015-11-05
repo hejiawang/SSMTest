@@ -1,4 +1,4 @@
-package com.wang.cxf.test.controller;
+package com.wang.test.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;

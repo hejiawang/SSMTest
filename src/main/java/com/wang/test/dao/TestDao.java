@@ -1,8 +1,8 @@
-package com.wang.cxf.test.dao;
+package com.wang.test.dao;
 
 import java.util.ArrayList;
 
-import com.wang.cxf.test.model.Test;
+import com.wang.test.model.Test;
 
 public interface TestDao {
 	

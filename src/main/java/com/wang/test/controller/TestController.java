@@ -1,4 +1,4 @@
-package com.wang.cxf.test.controller;
+package com.wang.test.controller;
 
 import java.util.ArrayList;
 
@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.wang.cxf.test.model.Test;
-import com.wang.cxf.test.service.TestService;
+import com.wang.test.model.Test;
+import com.wang.test.service.TestService;
 
 @Controller
 @RequestMapping("/testcontroller")
