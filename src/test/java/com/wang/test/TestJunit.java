@@ -37,8 +37,8 @@ public class TestJunit {
 	@org.junit.Test
 	public void addTest(){
 		Test test = new Test();
-		test.setId(5);
-		test.setName("test5");
+		test.setId(2);
+		test.setName("test2");
 		testDao.addTest(test);
 	}
 	

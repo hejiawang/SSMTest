@@ -18,4 +18,20 @@ public class TestService {
 		return testDao.getAllTest();
 	}
 
+	public Test getTestById(int id) {
+		return testDao.getTestById(id);
+	}
+
+	public void addTest(Test test) {
+		testDao.addTest(test);
+	}
+
+	public void updateTestById(int id, String name) {
+		testDao.updateTestById(id, name);
+	}
+
+	public void delTestById(int id) {
+		testDao.delTestById(id);
+	}
+
 }
