@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.wang.test.model.Test;
@@ -19,22 +20,23 @@ public class TestController extends BaseController {
 	@Autowired
 	private TestService testService;
 
-	@RequestMapping(value = "/getalltest")
-	public void getAllTest(HttpServletResponse response) {
+	@RequestMapping(value = "/gettest")
+	public void getAllTest(HttpServletRequest request,HttpServletResponse response) {
 		
-		ArrayList<Test> tests = testService.getAllTest();
-		printJson(response, tests);
-	}
-	
-	@RequestMapping(value = "/gettestbyid")
-	public void getTestById(HttpServletRequest request, HttpServletResponse response) {
-	
+		ArrayList<Test> tests;
 		String idStr = request.getParameter("id");
-		int id = Integer.parseInt(idStr);
-		Test test = testService.getTestById(id);
-		printJson(response, test);
+		if( StringUtils.isEmpty(idStr) ){
+			tests = testService.getAllTest();
+			printJson(response, tests);
+		} else {
+			int id = Integer.parseInt(idStr);
+			Test test = testService.getTestById(id);
+			tests = new ArrayList<Test>();
+			tests.add(test);
+			printJson(response, tests);
+		}
 	}
-
+	
 	@RequestMapping(value = "/addtest")
 	public void addTest(HttpServletRequest request, HttpServletResponse response) {
 		
