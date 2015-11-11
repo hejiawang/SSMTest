@@ -26,9 +26,15 @@
 
 	<table>
 		<tr>
+			<td><input type="text" id="addtestid" placeholder="test id" /></td>
+			<td><input type="text" id="addtestname" placeholder="test name" /></td>
+			<td><input type="button" id="addtest" value="添加" /></td>
+		</tr>
+	</table>
+	<table>
+		<tr>
 			<td><input type="text" id="testid" placeholder="test id" /></td>
 			<td><input type="button" id="gettest" value="查找" /></td>
-			<td><input type="button" id="addtest" value="添加" /></td>
 			<td><input type="button" id="updatetest" value="修改" /></td>
 			<td><input type="button" id="deletetest" value="删除" /></td>
 		</tr>

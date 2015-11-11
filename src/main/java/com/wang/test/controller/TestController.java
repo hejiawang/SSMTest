@@ -48,6 +48,7 @@ public class TestController extends BaseController {
 		test.setId(id);
 		test.setName(name);
 		testService.addTest(test);
+		printJson(response, id);
 	}
 
 	@RequestMapping(value = "/updatetestbyid")
@@ -58,6 +59,7 @@ public class TestController extends BaseController {
 		int id = Integer.parseInt(idStr);
 		
 		testService.updateTestById(id, name);
+		printJson(response, id);
 	}
 
 	@RequestMapping(value = "/deltestbyid")
@@ -66,5 +68,6 @@ public class TestController extends BaseController {
 		String idStr = request.getParameter("id");
 		int id = Integer.parseInt(idStr);
 		testService.delTestById(id);
+		printJson(response, true);
 	}
 }
