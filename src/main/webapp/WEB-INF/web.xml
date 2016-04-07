@@ -4,7 +4,7 @@
 
 	<display-name>SSMTest</display-name>
 	<welcome-file-list>
-		<welcome-file>view/test.jsp</welcome-file>
+		<welcome-file>view/websocket.jsp</welcome-file>
 	</welcome-file-list>
 	<!-- 配置字符集 -->
 	<filter>
