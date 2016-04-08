@@ -8,14 +8,22 @@
        http://www.springframework.org/schema/websocket
        http://www.springframework.org/schema/websocket/spring-websocket-4.0.xsd">
 
-	<bean id="websocket" class="com.wang.test.websocket.handler.WebsocketEndPoint" />
+<!-- 	<bean id="websocket" class="com.wang.test.websocket.handler.WebsocketEndPoint" />
 
 	<websocket:handlers>
 		<websocket:mapping path="/websocket" handler="websocket" />
 		<websocket:handshake-interceptors>
 			<bean class="com.wang.test.websocket.HandshakeInterceptor" />
 		</websocket:handshake-interceptors>
-	</websocket:handlers>
+	</websocket:handlers> -->
+	
+<!-- 	<bean id="websocket" class="com.wang.test.websocket.demo.WebSocketHander" />
 
+	<websocket:handlers>
+		<websocket:mapping path="/websocket" handler="websocket" />
+		<websocket:handshake-interceptors>
+			<bean class="com.wang.test.websocket.demo.HandshakeInterceptor" />
+		</websocket:handshake-interceptors>
+	</websocket:handlers> -->
 
 </beans>
