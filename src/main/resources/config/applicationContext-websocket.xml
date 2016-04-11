@@ -17,13 +17,13 @@
 		</websocket:handshake-interceptors>
 	</websocket:handlers> -->
 	
-<!-- 	<bean id="websocket" class="com.wang.test.websocket.demo.WebSocketHander" />
+	<bean id="websocket" class="com.wang.test.websocket.demo.WebSocketHander" />
 
 	<websocket:handlers>
-		<websocket:mapping path="/websocket" handler="websocket" />
+		<websocket:mapping path="/echo" handler="websocket" />
 		<websocket:handshake-interceptors>
 			<bean class="com.wang.test.websocket.demo.HandshakeInterceptor" />
 		</websocket:handshake-interceptors>
-	</websocket:handlers> -->
+	</websocket:handlers>
 
 </beans>
